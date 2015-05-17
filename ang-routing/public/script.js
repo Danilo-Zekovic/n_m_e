@@ -28,6 +28,12 @@
             .when('/contact', {
                 templateUrl : 'pages/contact.html',
                 controller  : 'contactController'
+            })
+
+            //route for the danilo page
+            .when('/danilo',{
+            	templateUrl : 'pages/danilo.html',
+            	controller  : 'daniloController'
             });
     });
 
@@ -45,4 +51,8 @@
 
     scotchApp.controller('contactController', function($scope) {
         $scope.message = 'Contact us! JK. This is just a demo.';
+    });
+
+    scotchApp.controller('daniloController', function($scope) {
+        $scope.message = 'I am Danilo the owner of this application';
     });
