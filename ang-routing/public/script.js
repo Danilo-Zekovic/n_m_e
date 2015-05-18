@@ -34,6 +34,12 @@
             .when('/danilo',{
             	templateUrl : 'pages/danilo.html',
             	controller  : 'daniloController'
+            })
+
+            //route for .js file proba
+            .when('/proba',{
+            	templateUrl : 'pages/proba.js',
+            	controller  : 'probaController'
             });
     });
 
@@ -56,3 +62,18 @@
     scotchApp.controller('daniloController', function($scope) {
         $scope.message = 'I am Danilo the owner of this application';
     });
+
+    scotchApp.controller('probaController', function($scope) {
+        $scope.message = 'Hopefully it works',
+        $scope.doSomething = doSomething();
+    });
+
+
+    // javascript function 
+    var doSomething = function(){
+    	console.log("In the World!");
+    	var something = "<p>Danilo Zekovic</p>";
+    	jQuery(".foo").append('<p ng-scope>Danilo Zekovic</p>');
+    	
+
+    };
