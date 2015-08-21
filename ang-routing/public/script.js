@@ -72,7 +72,6 @@
     // javascript function 
     var doSomething = function(){
     	console.log("In the World!");
-    	var something = "<p>Danilo Zekovic</p>";
     	jQuery(".foo").append('<p ng-scope>Danilo Zekovic</p>');
     	
 
